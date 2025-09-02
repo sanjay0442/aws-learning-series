@@ -21,3 +21,6 @@ Each service has:
 - **Notes (exam-focused theory)**
 - **Labs (hands-on practicals)**
 - **Official AWS references**
+
+Other Services:
+12. ECS
