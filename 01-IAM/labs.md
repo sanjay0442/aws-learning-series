@@ -1,43 +1,38 @@
-🧪 Lab (Hands-On)
+# Day 1: AWS IAM – Hands-On Labs
 
-Lab 1: Create IAM User
+## 🧪 Lab 1: Create IAM User
+1. Go to **IAM → Users → Add User**
+2. Username: `lab-user`
+3. Select **Console access** + set custom password
+4. Attach policy: `AmazonS3ReadOnlyAccess`
+5. Save IAM login URL → Log in as `lab-user`
 
-IAM → Users → Add User → Name: lab-user
+👉 **Expected Result:** User can log in but only read S3 buckets.
 
-Console access + password
+---
 
-Attach AmazonS3ReadOnlyAccess
+## 🧪 Lab 2: Create IAM Group & Add User
+1. IAM → Groups → Create group `Developers`
+2. Attach `AmazonEC2ReadOnlyAccess`
+3. Add `lab-user` to `Developers`
 
-Login with IAM URL
+👉 **Expected Result:** User has **S3 ReadOnly + EC2 ReadOnly** access.
 
-👉 Result: User can log in but only read S3 buckets.
+---
 
-Lab 2: Create IAM Group & Add User
+## 🧪 Lab 3: Enable MFA for Root
+1. IAM Dashboard → Security Status → Enable MFA
+2. Choose **Virtual MFA App** (Google Authenticator/Authy)
+3. Scan QR code → Enter 2 codes → Confirm
 
-IAM → Groups → Create Developers
+👉 **Expected Result:** Root account now requires MFA at login.
 
-Attach AmazonEC2ReadOnlyAccess
+---
 
-Add lab-user to Developers
-
-👉 Result: User has S3 ReadOnly + EC2 ReadOnly.
-
-Lab 3: Enable MFA (Root)
-
-IAM Dashboard → Security Status → Enable MFA
-
-Use Authenticator app → Scan QR → Enter 2 codes
-
-👉 Result: Root account requires MFA at login.
-
-(Optional Advanced) Lab 4: IAM Role for EC2
-
-IAM → Roles → Create Role → Select EC2
-
-Attach AmazonS3FullAccess
-
-Launch EC2 with this role
-
-Inside EC2 run:** aws s3 ls **
-
-👉 Result: EC2 can access S3 without credentials.
+## (Optional Advanced) Lab 4: IAM Role for EC2
+1. IAM → Roles → Create Role → Select **EC2**
+2. Attach `AmazonS3FullAccess`
+3. Launch EC2 instance → Attach this role
+4. Inside EC2, run:
+   ```bash
+   aws s3 ls
