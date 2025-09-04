@@ -1,11 +1,7 @@
 🗂 Day 1: IAM (Identity & Access Management)
 📝 Theory Notes (Exam-Oriented)
 
-What is IAM?
-
-AWS global service for authentication & authorization.
-
-Free to use.# Day 1: AWS IAM (Identity and Access Management) – Notes
+# Day 1: AWS IAM (Identity and Access Management) – Notes
 
 ## 📌 What is IAM?
 - IAM is a **global service** for authentication & authorization in AWS.
