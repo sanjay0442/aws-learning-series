@@ -135,4 +135,5 @@ Move on to **`Day-3-VPC/labs.md`** for practical hands-on labs:
 - Attach Internet/NAT Gateways  
 - Launch EC2 instances in subnets  
 - Test connectivity and VPC Endpoints
+- Access S3 privately using a VPC Endpoint
 
