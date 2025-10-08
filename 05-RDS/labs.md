@@ -43,28 +43,28 @@ Connect:     mysql -h <RDS-endpoint> -u admin -p
 
 Inside MySQL:
 
-CREATE DATABASE testdb;
-USE testdb;
-CREATE TABLE employees (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(50),
-  department VARCHAR(50)
-);
-INSERT INTO employees (name, department)
-VALUES ('John', 'HR'), ('Sita', 'Finance');
-SELECT * FROM employees;
+    CREATE DATABASE testdb;
+    USE testdb;
+    CREATE TABLE employees (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      name VARCHAR(50),
+      department VARCHAR(50)
+    );
+    INSERT INTO employees (name, department)
+    VALUES ('John', 'HR'), ('Sita', 'Finance');
+    SELECT * FROM employees;
 
-🔹 Lab 4: Take Manual Snapshot
+**🔹 Lab 4: Take Manual Snapshot**
 
 Steps:
 
 In RDS console → select DB → Actions → Take snapshot.
 
-Name: rds-mysql-snapshot-1.
+    Name: rds-mysql-snapshot-1.
 
 Verify it appears under “Snapshots”.
 
-🔹 Lab 5: Restore DB from Snapshot
+**🔹 Lab 5: Restore DB from Snapshot**
 
 Steps:
 
@@ -74,7 +74,7 @@ Give new DB name rds-restore-lab.
 
 Launch and test connection.
 
-🔹 Lab 6: Enable Multi-AZ Deployment
+**🔹 Lab 6: Enable Multi-AZ Deployment**
 
 Steps:
 
@@ -86,7 +86,7 @@ Test failover by rebooting with failover:
 
 Actions → Reboot → check "Reboot with failover".
 
-🔹 Lab 7: Create Read Replica
+**🔹 Lab 7: Create Read Replica**
 
 Steps:
 
@@ -98,7 +98,7 @@ After creation, connect using replica endpoint.
 
 Test read-only access.
 
-🔹 Lab 8: Configure CloudWatch Alarms
+**🔹 Lab 8: Configure CloudWatch Alarms**
 
 Create CloudWatch alarms for:
 
@@ -108,7 +108,7 @@ Free Storage Space < 1 GB
 
 This helps you monitor DB performance.
 
-🔹 Lab 9: Enable Encryption
+**🔹 Lab 9: Enable Encryption**
 
 When creating a new RDS instance, enable:
 
@@ -118,15 +118,15 @@ SSL for connections
 
 Verify encryption:
 
-SHOW VARIABLES LIKE 'have_ssl';
+    SHOW VARIABLES LIKE 'have_ssl';
 
 🔹 Lab 10: Delete RDS Instance (Clean-up)
 
 Always delete lab instances to avoid charges:
 
-aws rds delete-db-instance --db-instance-identifier rds-mysql-lab --skip-final-snapshot
+    aws rds delete-db-instance --db-instance-identifier rds-mysql-lab --skip-final-snapshot
 
-🧭 Interview / Practice Questions
+**🧭 Interview / Practice Questions**
 
 What’s the difference between Single-AZ and Multi-AZ?
 
