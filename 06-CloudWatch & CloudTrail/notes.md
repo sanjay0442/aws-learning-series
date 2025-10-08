@@ -124,6 +124,7 @@ Insight Events:              	Detect unusual API spikes or anomalies
 
 
   **🧩 Architecture Diagram (Text Representation)**
+  
 
     ┌─────────────────────────────────────────────┐
   │                AWS ACCOUNT                  │
