@@ -221,6 +221,7 @@ Check CloudWatch → Alarms → Auto Scaling Actions.
 **🧪 Hands-On Summary**
 
 Lab	                    Task	                                    Output
+
 1	                    Create ALB	                                Distribute traffic
 2	                    Attach EC2s	                                Load balanced response
 3	                    Create ASG	                                Auto-scaling group ready
