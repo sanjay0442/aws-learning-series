@@ -85,9 +85,7 @@ Custom dashboards to visualize metrics in one view — e.g., CPU, memory, and ne
   AWS CloudTrail records all API calls and console actions for your AWS account.
   
   Captures who did what, when, and from where.
-  
   Provides audit logs stored in S3.
-  
   Integrates with CloudWatch and SNS for alerts.
 
 
