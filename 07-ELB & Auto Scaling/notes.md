@@ -57,9 +57,9 @@ Elastic Load Balancing automatically distributes incoming traffic across multipl
           └──────┬───────┘
      ┌───────────┴───────────┐
      │                       │
-     ┌───────▼────────┐     ┌───────▼────────┐
+┌───────▼────────┐          ┌───────▼────────┐
 │ EC2 Instance 1 │          │ EC2 Instance 2 │
-│ (us-east-1a) │ │         (us-east-1b) │
+│ (us-east-1a) │ │             (us-east-1b) │
 └─────────────────┘         └─────────────────┘
 
 
