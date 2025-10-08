@@ -85,8 +85,66 @@ Custom dashboards to visualize metrics in one view — e.g., CPU, memory, and ne
   AWS CloudTrail records all API calls and console actions for your AWS account.
   
   Captures who did what, when, and from where.
+  
   Provides audit logs stored in S3.
+  
   Integrates with CloudWatch and SNS for alerts.
+
+****  🔹 CloudTrail Key Features****
+
+Feature	                  Description
+Event history:    	      Records all AWS API calls (90 days default)
+Multi-region:             trails	Capture events across all regions
+S3 integration:          	Store logs for long-term auditing
+CloudTrail Insights:    	Detects unusual API activities
+Integration:            	Works with CloudWatch Logs and SNS
+
+**🔹 CloudTrail Event Types**
+Type	                        Description
+Management Events:          	Control-plane actions (CreateUser, StartInstances)
+Data Events:                	Object-level activity (S3 GetObject, Lambda Invoke)
+Insight Events:              	Detect unusual API spikes or anomalies
+
+**Example CloudTrail Log**
+  {
+    "eventTime": "2025-10-04T12:45:00Z",
+    "eventName": "StartInstances",
+    "userIdentity": { "userName": "admin" },
+    "sourceIPAddress": "115.241.56.33",
+    "awsRegion": "ap-south-1"
+  }
+
+  **🏗️ CloudWatch vs CloudTrail**
+  Feature	              CloudWatch	                      CloudTrail
+  Purpose:            	Monitor performance	              Record user/API activity
+  Data Type:          	Metrics, Logs	                    Event history
+  Usage:             	  Resource health, performance	    Security auditing, compliance
+  Storage:            	CloudWatch Logs                  	S3
+  Integration:        	SNS, Lambda	                      CloudWatch Logs, SNS
+
+
+  **🧩 Architecture Diagram (Text Representation)**
+
+    ┌─────────────────────────────────────────────┐
+  │                AWS ACCOUNT                  │
+  ├─────────────────────────────────────────────┤
+  │           CloudWatch (Monitoring)           │
+  │  ├── Metrics (CPU, Memory, etc.)            │
+  │  ├── Logs (EC2, Lambda)                     │
+  │  ├── Alarms (Triggers SNS, AutoScaling)     │
+  │  ├── Dashboards                             │
+  │  └── Events (Automation Rules)              │
+  │                                             │
+  │           CloudTrail (Auditing)             │
+  │  ├── Tracks API Calls & Console Actions     │
+  │  ├── Stores Logs to S3                      │
+  │  ├── Sends Notifications via SNS            │
+  │  └── Detects Unusual Behavior               │
+  └─────────────────────────────────────────────┘
+
+  
+
+
 
 
 
