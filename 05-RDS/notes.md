@@ -71,6 +71,7 @@ AWS automatically applies minor version updates during your chosen maintenance w
 Here’s what happens when you create an RDS instance:
 
 1. You select:
+
   DB Engine (MySQL, PostgreSQL, etc.)
 
   DB instance class (e.g., db.t3.micro)
@@ -80,6 +81,7 @@ Here’s what happens when you create an RDS instance:
   VPC/Subnet and Security Group
 
 3. RDS automatically provisions:
+   
   Primary DB instance
 
   Optional standby instance (Multi-AZ)
@@ -87,6 +89,7 @@ Here’s what happens when you create an RDS instance:
   Endpoint for connection
 
 4. You can connect from:
+   
   EC2 instance
 
   AWS Lambda function
