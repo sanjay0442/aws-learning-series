@@ -54,16 +54,22 @@ It monitors AWS resources in real time.
 
 ### 🔹 CloudWatch Alarm States
 
-- **OK** – Metric within threshold  
-- **ALARM** – Metric outside threshold  
+- **OK** – Metric within threshold
+- 
+- **ALARM** – Metric outside threshold
+- 
 - **INSUFFICIENT_DATA** – Not enough data to evaluate  
 
 ---
 
 ### 🔹 CloudWatch Logs
+
 - Collects application/system logs.
+- 
 - Organized as:
+- 
   - **Log Groups** → contain multiple **Log Streams**
+  - 
 - You can create **metric filters** to trigger actions based on logs.
 
 ---
@@ -127,6 +133,7 @@ Insight Events:              	Detect unusual API spikes or anomalies
   
 
     ┌─────────────────────────────────────────────┐
+    
   │                AWS ACCOUNT                  │
   ├─────────────────────────────────────────────┤
   │           CloudWatch (Monitoring)           │
