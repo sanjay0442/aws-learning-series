@@ -1,32 +1,21 @@
-🧪 3. RDS Labs (Hands-On Exercises)
-
+**🧪 3. RDS Labs (Hands-On Exercises)**
 Let’s get practical now 💪
 
-🔹 Lab 1: Launch an RDS MySQL Instance
+**🔹 Lab 1: Launch an RDS MySQL Instance**
 
 Objective: Deploy a basic MySQL database using AWS Console or CLI.
 
-Steps (Console):
-
-Go to RDS → Databases → Create Database.
-
-Choose Standard create.
-
-Select MySQL engine.
-
-Choose Free tier.
-
-DB instance identifier: rds-mysql-lab.
-
-Username: admin, Password: <your_password>.
-
-Choose VPC (default or custom).
-
-Connectivity: enable Public access (for testing).
-
-Security group: allow inbound MySQL (TCP 3306) from your IP.
-
-Create Database and wait 5–10 minutes.
+    Steps (Console):
+    Go to RDS → Databases → Create Database.
+    Choose Standard create
+    Select MySQL engine.
+    Choose Free tier.
+    DB instance identifier: rds-mysql-lab.
+    Username: admin, Password: <your_password>.
+    Choose VPC (default or custom).
+    Connectivity: enable Public access (for testing).
+    Security group: allow inbound MySQL (TCP 3306) from your IP.
+    Create Database and wait 5–10 minutes.
 
 Verify Connection:
 
