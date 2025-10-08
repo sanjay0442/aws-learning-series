@@ -19,9 +19,9 @@ Objective: Deploy a basic MySQL database using AWS Console or CLI.
 
 Verify Connection:
 
-mysql -h <RDS-endpoint> -u admin -p
+    mysql -h <RDS-endpoint> -u admin -p
 
-🔹 Lab 2: Connect from EC2 to RDS
+**🔹 Lab 2: Connect from EC2 to RDS**
 
 Objective: Connect to RDS from an EC2 instance within the same VPC.
 
@@ -31,19 +31,15 @@ Launch an EC2 instance in same VPC.
 
 SSH into EC2:
 
-ssh -i key.pem ec2-user@<public-ip>
-
+    ssh -i key.pem ec2-user@<public-ip>
 
 Install MySQL client:
 
-sudo yum install mysql -y
+    sudo yum install mysql -y
 
+Connect:     mysql -h <RDS-endpoint> -u admin -p
 
-Connect:
-
-mysql -h <RDS-endpoint> -u admin -p
-
-🔹 Lab 3: Create Database & Table
+**🔹 Lab 3: Create Database & Table**
 
 Inside MySQL:
 
