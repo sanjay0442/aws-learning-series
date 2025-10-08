@@ -72,18 +72,25 @@ Here’s what happens when you create an RDS instance:
 
 1. You select:
   DB Engine (MySQL, PostgreSQL, etc.)
+
   DB instance class (e.g., db.t3.micro)
+  
   Storage type and size
+  
   VPC/Subnet and Security Group
 
-2. RDS automatically provisions:
+3. RDS automatically provisions:
   Primary DB instance
+
   Optional standby instance (Multi-AZ)
+  
   Endpoint for connection
 
-3. You can connect from:
+4. You can connect from:
   EC2 instance
+
   AWS Lambda function
+  
   On-premises system
   
   Local workstation (if public access enabled)
