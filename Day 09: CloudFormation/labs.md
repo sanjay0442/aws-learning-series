@@ -379,3 +379,17 @@ aws cloudformation delete-stack --stack-name my-stack
 
 
 ✅ Removes all AWS resources created by CloudFormation — saves cost.
+
+✅ Summary
+
+| Concept        | Key Takeaway                               |
+| -------------- | ------------------------------------------ |
+| CloudFormation | Infrastructure as Code                     |
+| Template       | YAML/JSON file describing resources        |
+| Stack          | Deployed infrastructure from template      |
+| IAM Role       | Secure way for EC2 to access AWS resources |
+| Nested Stack   | Modular & reusable infrastructure          |
+| Change Set     | Preview updates before applying            |
+| Delete Stack   | One-click cleanup                          |
+
+
