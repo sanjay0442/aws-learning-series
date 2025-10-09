@@ -394,4 +394,5 @@ aws cloudformation delete-stack --stack-name my-stack
 | Change Set     | Preview updates before applying            |
 | Delete Stack   | One-click cleanup                          |
 
-
+Create a 3-Tier Web Application (VPC + EC2 + RDS + S3 + Load Balancer) using CloudFormation automation —
+this will be your Day 9 Final Project.
