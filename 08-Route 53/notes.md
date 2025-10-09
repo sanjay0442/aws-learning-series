@@ -118,4 +118,102 @@ Routing policies decide **how Route 53 responds** to DNS queries.
 
 ## 🧠 How Route 53 Works (Flow Diagram)
 
+User Request → Route 53 → DNS Resolution → AWS Resource (EC2/S3/ALB)
+
+
+Example:
+
+User enters www.example.com
+
+Route 53 returns IP of Application Load Balancer
+
+ALB routes traffic to healthy EC2 instances
+
+
+---
+
+## 🔍 Route 53 Health Checks
+
+- Monitors endpoint health using HTTP/HTTPS/TCP.  
+- Can be associated with routing policies (like failover).  
+- Example:  
+  - Primary EC2 health check fails → Route 53 automatically switches traffic to backup EC2.
+
+---
+
+## 🔐 Route 53 with Private Hosted Zone
+
+Used inside a **VPC** for **internal DNS resolution**, such as:
+- `db.internal.local`
+- `app.internal.local`
+
+Only resources **inside the VPC** can resolve it.
+
+---
+
+## 🧰 Route 53 Integrations
+
+| Service | Integration |
+|----------|--------------|
+| **EC2** | Map instance or ALB DNS name |
+| **S3** | Route traffic to static website bucket |
+| **CloudFront** | Use for CDN endpoints |
+| **ELB / ALB** | Alias record for load balancer |
+| **RDS** | Use CNAME for database endpoints |
+| **CloudWatch** | Monitor DNS query metrics and health checks |
+
+---
+
+## 🧾 Example Record Set
+
+| Name | Type | Value | Routing |
+|------|------|--------|----------|
+| `example.com` | A | Alias → ALB DNS | Simple |
+| `www.example.com` | CNAME | example.com | Simple |
+| `api.example.com` | A | Alias → API Gateway | Weighted |
+| `db.example.com` | CNAME | rds-db-endpoint.aws.com | Simple |
+
+---
+
+## 🧩 Route 53 Pricing (Simplified)
+
+| Service | Typical Cost |
+|----------|---------------|
+| Hosted Zone | $0.50 per month per zone |
+| Standard Queries | $0.40 per million |
+| Health Checks | $0.50 per month each |
+| Alias Queries to AWS | Free |
+
+---
+
+## 🎯 Interview Questions
+
+1. What is Amazon Route 53?  
+2. What are the types of hosted zones in Route 53?  
+3. What is the difference between an Alias and a CNAME record?  
+4. How does Route 53 handle failover?  
+5. What is a Weighted Routing Policy used for?  
+6. Explain Latency-Based Routing with an example.  
+7. Can you use Route 53 with on-premise servers?  
+8. What are Health Checks, and how do they work?  
+9. How do Route 53 and CloudFront work together?  
+10. How can you use Route 53 for internal (private) DNS?
+
+---
+
+## ✅ Summary
+
+| Feature | Description |
+|----------|--------------|
+| **Service Type** | Managed DNS & Traffic Management |
+| **Main Uses** | Domain registration, routing, health checks |
+| **Supports** | EC2, S3, ALB, CloudFront, API Gateway |
+| **Hosted Zones** | Public & Private |
+| **Policies** | Simple, Weighted, Latency, Failover, Geo, Multi-value |
+| **Alias Support** | Yes, for AWS resources |
+| **Cost Optimization** | Free Alias queries for AWS services |
+
+---
+
+**Next Module → [Day 09: CloudFormation (Infrastructure as Code)](../09-CloudFormation/README.md)**  
 
