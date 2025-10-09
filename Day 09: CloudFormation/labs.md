@@ -388,6 +388,8 @@ aws cloudformation delete-stack --stack-name my-stack
 | Template       | YAML/JSON file describing resources        |
 | Stack          | Deployed infrastructure from template      |
 | IAM Role       | Secure way for EC2 to access AWS resources |
+
+👉 Create a 3-Tier Web Application (VPC + EC2 + RDS + S3 + Load Balancer) using CloudFormation automation —
 | Nested Stack   | Modular & reusable infrastructure          |
 | Change Set     | Preview updates before applying            |
 | Delete Stack   | One-click cleanup                          |
