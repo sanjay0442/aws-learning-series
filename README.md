@@ -67,6 +67,28 @@ aws-learning-series/
 4. Explore the linked **official AWS docs** for deeper learning.  
 5. Repeat daily 🚀  
 
+**🎯 Free / Low-Cost Certificates & Courses in Cloud / AWS Security**
+
+| Course / Provider                                                   | What You Learn & Why It Helps                                                                                                                                                                | Free / Cost Notes                                                                     |
+| ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **AWS Security Fundamentals** (AWS free digital training)           | Basic cloud security: AWS access control, governance, logging, encryption, risk & compliance. ([Amazon Web Services, Inc.][1])                                                               | Free, self-paced. Good starting point.                                                |
+| **Alison – Amazon Web Services: Basic**                             | Covers IAM, VPC security, content delivery, AWS best practices. ([Alison][2])                                                                                                                | Free course + certification (Alison provides free certificate or low-fee).            |
+| **MyGreatLearning – IAM & Cloud Security**                          | Focused on AWS IAM, cloud security & fundamentals. ([Great Learning][3])                                                                                                                     | Free content, includes certificate of completion.                                     |
+| **ScholarHat – AWS Cloud Practitioner Free Course**                 | Introduces AWS fundamentals (core services, security, pricing etc.) which is foundational to AWS security. ([ScholarHat][4])                                                                 | Free. Helps you prepare for real certs later.                                         |
+| **EC-Council / Cybrary**                                            | Introductory cloud security knowledge – e.g. basics of security posture in the cloud. ([Cybrary][5])                                                                                         | Some parts free; may require upgrade for full access.                                 |
+| **GreatLearning / Edureka / Intellipaat free AWS beginner courses** | Broad AWS topics including security sections / modules. Helpful for building base. ([edureka.co][6])                                                                                         | Usually free course + paid certificate (or free certificate depending on promotions). |
+| **AWS Skill Builder**                                               | AWS often provides free training paths + badges (e.g. a “Security Champion” badge) through AWS Skill Builder. These show your commitment & understanding.                                    | Free. Good for getting credentials that aren’t full AWS exams but recognizable.       |
+| **AICTE / Government / Local Free-Training Initiatives**            | Sometimes run free AWS & cloud security beginner courses with certificates (especially in countries like India). Eg. AWS for Beginners in Hindi by Great Learning. ([AICTE Free Courses][7]) | Free. Good localized content.                                                         |
+
+[1]: https://aws.amazon.com/about-aws/whats-new/2016/06/learn-aws-security-fundamentals-with-free-and-online-training/?utm_source=chatgpt.com "Learn AWS Security Fundamentals with Free and Online Training - AWS"
+[2]: https://alison.com/course/amazon-web-services-basic?utm_source=chatgpt.com "Amazon Web Services: Basic | Free Online Course | Alison"
+[3]: https://www.mygreatlearning.com/academy/learn-for-free/courses/iam-cloud-security?utm_source=chatgpt.com "AWS IAM Cloud Security Free Online Course - Great Learning"
+[4]: https://www.scholarhat.com/free-course/aws-cloud-practitioner-course?utm_source=chatgpt.com "Free AWS Cloud Practitioner Online Course [with Certificate]"
+[5]: https://www.cybrary.it/course/ccsk?utm_source=chatgpt.com "FREE Certificate of Cloud Security Knowledge (CCSK) Online Certification Training Course | Cybrary"
+[6]: https://www.edureka.co/free-course/learn-aws-basics-online?utm_source=chatgpt.com "AWS FREE Course for Beginners with Certification | Edureka"
+[7]: https://free.aicte-india.org/AWS-for-Beginners-in-Hindi.php?utm_source=chatgpt.com "AICTE Free Courses"
+
+
 ---
 
 ## 🔗 Official AWS Resources
