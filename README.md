@@ -24,6 +24,14 @@ The goal is to **learn one AWS service at a time** with:
 🔜 Day 9: CloudFormation (Infrastructure as Code Basics)  
 🔜 Day 10: Backup & Cost Management  
 🔜 Day 11: AWS Well-Architected Framework  
+🔜 Day 12: AWS Lambda & Serverless Concepts
+🔜 Day 13: Elastic Beanstalk & Application Deployment
+🔜 Day 14: AWS CloudFront & CDN
+🔜 Day 15: AWS ECS (Elastic Container Service)
+🔜 Day 16: ECR (Elastic Container Registry)
+🔜 Day 17: Amazon EKS (Elastic Kubernetes Service)
+🔜 Day 18: Cloud Security
+🔜 Day 19 – AWS Security
 
 *(This path covers ~80% of exam-relevant services for both Architect Associate and SysOps Admin.)*
 
