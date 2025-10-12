@@ -43,61 +43,61 @@ Control who can access what.
 
 Implement least privilege using:
 
-AWS IAM / Azure AD / GCP IAM
+  AWS IAM / Azure AD / GCP IAM
+  
+  MFA (Multi-Factor Authentication)
+  
+  Role-based access control (RBAC)
+  
+  Temporary credentials instead of static keys
 
-MFA (Multi-Factor Authentication)
+**🔏 Data Protection**
 
-Role-based access control (RBAC)
+  Encryption in Transit → TLS/SSL
+  
+  Encryption at Rest → KMS / Key Vault / Cloud KMS
+  
+  Data Loss Prevention (DLP) to prevent sensitive data leaks
+  
+  Backups and snapshots for resilience
 
-Temporary credentials instead of static keys
-
-🔏 Data Protection
-
-Encryption in Transit → TLS/SSL
-
-Encryption at Rest → KMS / Key Vault / Cloud KMS
-
-Data Loss Prevention (DLP) to prevent sensitive data leaks
-
-Backups and snapshots for resilience
-
-🧱 Network Security
+**🧱 Network Security**
 
 Segmentation using:
 
-AWS: VPCs + Security Groups + NACLs
-
-Azure: VNets + NSGs
-
-GCP: VPC Networks + Firewall Rules
+  AWS: VPCs + Security Groups + NACLs
+  
+  Azure: VNets + NSGs
+  
+  GCP: VPC Networks + Firewall Rules
 
 Use Private Subnets for backend systems
 
 VPN / Direct Connect / ExpressRoute for secure hybrid access
 
-⚙️ Monitoring & Threat Detection
+**⚙️ Monitoring & Threat Detection**
 
 Continuous monitoring and logging:
 
-AWS: CloudWatch, CloudTrail, GuardDuty
-
-Azure: Monitor, Sentinel
-
-GCP: Security Command Center
+  AWS: CloudWatch, CloudTrail, GuardDuty
+  
+  Azure: Monitor, Sentinel
+  
+  GCP: Security Command Center
 
 Centralized alerts and anomaly detection
 
-🧩 Compliance & Governance
+**🧩 Compliance & Governance**
 
 Align with standards: ISO 27001, GDPR, HIPAA, SOC2
 
 Use compliance dashboards:
 
-AWS Security Hub
-
-Azure Compliance Manager
-
-GCP Assured Workloads
+  AWS Security Hub
+  
+  Azure Compliance Manager
+  
+  GCP Assured Workloads
 
 Enable logging for auditing and incident response
 
@@ -129,10 +129,10 @@ Enable logging for auditing and incident response
 
 Think of cloud security like renting an apartment:
 
-The building security (doors, guards, fire systems) = Cloud Provider
-
-Your apartment locks, cameras, valuables = You (Customer)
-Both must be secure for full safety.
+  The building security (doors, guards, fire systems) = Cloud Provider
+  
+  Your apartment locks, cameras, valuables = You (Customer)
+  Both must be secure for full safety.
 
 8️⃣ Quick Recap
 
