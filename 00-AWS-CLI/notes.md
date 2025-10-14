@@ -122,8 +122,59 @@ Infrastructure automation with shell scripts
 
 CI/CD pipelines (Jenkins, GitHub Actions, GitLab CI/CD)
 
+**🧠 AWS IAM Pricing Overview**
+
+💰 IAM (Identity and Access Management) is completely free —
+There are no direct charges for:
+
+Creating IAM users, groups, or roles
+
+Attaching policies (AWS managed or custom)
+
+Using MFA (multi-factor authentication)
+
+Managing permissions or credentials
+
+Accessing the IAM console or API
+
+So — you can create as many IAM users, roles, and policies as you need without worrying about extra IAM costs.
+
+**⚠️ However — there are indirect costs in a few cases:**
+| **Feature / Service**                        | **Pricing Impact**                  | **Explanation**                                                                                                                                                                                                |
+| -------------------------------------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **IAM Access Analyzer**                      | 🟡 *Free for findings*              | Basic analyzer (for resource sharing) is free, but if you enable **AWS Organizations access analyzer** (organization-level scanning), that may use **AWS CloudTrail and Config**, which can incur small costs. |
+| **IAM Roles with AWS Services**              | 🟢 Free                             | Example: An EC2 instance assumes a role — no cost for the role usage.                                                                                                                                          |
+| **Temporary credentials (STS)**              | 🟢 Free                             | Security Token Service (STS) is free to use.                                                                                                                                                                   |
+| **AWS Single Sign-On / IAM Identity Center** | 🟢 Free (for identity federation)   | IAM Identity Center itself is free; costs may occur if linked to directory services.                                                                                                                           |
+| **CloudTrail logs of IAM activity**          | 🔵 *Charged for CloudTrail storage* | IAM uses CloudTrail for logging. While IAM is free, storing and analyzing logs in S3 or CloudWatch costs money.                                                                                                |
+| **MFA (Multi-Factor Authentication)**        | 🟢 Free (virtual MFA)               | Virtual MFA via authenticator apps is free. Physical MFA devices (like hardware tokens) cost extra if purchased.                                                                                               |
+
+**💡 Example Scenarios**
+
+Creating users and roles:
+You can create 100 users and 50 roles → still $0.00 for IAM itself.
+
+Logging IAM events:
+If CloudTrail logs those events to S3, then S3 storage and CloudTrail data events cost a small amount.
+
+Using IAM with EC2:
+An EC2 instance assuming an IAM Role → Free.
+
 Managing multiple AWS accounts
 
 Troubleshooting (quick queries without console)
 
 Integration with Terraform, Ansible, Python/Boto3
+
+**✅ Summary**
+
+| Category                           | Cost                      |
+| ---------------------------------- | ------------------------- |
+| IAM users, groups, roles, policies | ✅ Free                    |
+| IAM roles for AWS services         | ✅ Free                    |
+| IAM Access Analyzer (basic)        | ✅ Free                    |
+| STS temporary credentials          | ✅ Free                    |
+| CloudTrail logs (for IAM events)   | 💰 Charged for storage    |
+| MFA (virtual apps)                 | ✅ Free                    |
+| Hardware MFA tokens                | 💰 Charged (if purchased) |
+
